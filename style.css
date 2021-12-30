@@ -1,0 +1,29 @@
+
+.fParrafo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    opacity: 77%;
+}
+
+.tituloParrafo{
+font-size: 24px;
+font-family: 'Roboto', sans-serif;
+font-weight: 800;
+text-align: justify
+}
+
+.textSale
+{
+font-size: 96px;
+font-weight: 700;
+}
+
+.iconBlock{
+    display:inline;
+}
+.wrapper{
+    display:grid;
+   
+    place-items:center
+  }

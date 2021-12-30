@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <title>Proyecto Decohogar</title>
+</head>
+
+<body>
+  <header class="container mx-auto px-4">
+    <nav class=" bg-orange-500/30  border-gray-200  px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
+      <div class="container flex flex-wrap items-center justify-between mx-auto">
+        <a href="#" class="flex"><svg class="h-10 mr-3" viewBox="0 0 52 72" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1.87695 53H28.7791C41.5357 53 51.877 42.7025 51.877 30H24.9748C12.2182 30 1.87695 40.2975 1.87695 53Z"
+              fill="#76A9FA"></path>
+            <path
+              d="M0.000409561 32.1646L0.000409561 66.4111C12.8618 66.4111 23.2881 55.9849 23.2881 43.1235L23.2881 8.87689C10.9966 8.98066 1.39567 19.5573 0.000409561 32.1646Z"
+              fill="#A4CAFE"></path>
+            <path
+              d="M50.877 5H23.9748C11.2182 5 0.876953 15.2975 0.876953 28H27.7791C40.5357 28 50.877 17.7025 50.877 5Z"
+              fill="#1C64F2"></path>
+          </svg>
+          <span class=" self-center  text-lg font-semibold whitespace-nowrap dark:text-white">DecoHogar</span>
+        </a>
+        <button data-collapse-toggle="mobile-menu" type="button" class="
+              inline-flex
+              items-center
+              p-2
+              ml-3
+              text-sm text-gray-500
+              rounded-lg
+              md:hidden
+              hover:bg-gray-100focus:outline-none
+              focus:ring-2 focus:ring-gray-200
+              dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600
+            " aria-controls="mobile-menu-2" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+          <ul class="
+                flex flex-col
+                mt-4
+                md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium
+              ">
+            <li>
+              <a href="#" class="
+                    block
+                    py-2
+                    pl-3
+                    pr-4
+                    text-white
+                    bg-blue-700
+                    rounded
+                    md:bg-transparent md:text-blue-700 md:p-0
+                    dark:text-white
+                  " aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#" class="
+                    block
+                    py-2
+                    pl-3
+                    pr-4
+                    text-gray-700
+                    border-b border-gray-100
+                    hover:bg-gray-50
+                    md:hover:bg-transparent
+                    md:border-0
+                    md:hover:text-blue-700
+                    md:p-0
+                    dark:text-gray-400
+                    md:dark:hover:text-white
+                    dark:hover:bg-gray-700 dark:hover:text-white
+                    md:dark:hover:bg-transparent
+                    dark:border-gray-700
+                  ">About</a>
+            </li>
+            <li>
+              <a href="#" class="
+                    block
+                    py-2
+                    pl-3
+                    pr-4
+                    text-gray-700
+                    border-b border-gray-100
+                    hover:bg-gray-50
+                    md:hover:bg-transparent
+                    md:border-0
+                    md:hover:text-blue-700
+                    md:p-0
+                    dark:text-gray-400
+                    md:dark:hover:text-white
+                    dark:hover:bg-gray-700 dark:hover:text-white
+                    md:dark:hover:bg-transparent
+                    dark:border-gray-700
+                  ">Services</a>
+            </li>
+            <li>
+              <a href="#" class="
+                    block
+                    py-2
+                    pl-3
+                    pr-4
+                    text-gray-700
+                    border-b border-gray-100
+                    hover:bg-gray-50
+                    md:hover:bg-transparent
+                    md:border-0
+                    md:hover:text-blue-700
+                    md:p-0
+                    dark:text-gray-400
+                    md:dark:hover:text-white
+                    dark:hover:bg-gray-700 dark:hover:text-white
+                    md:dark:hover:bg-transparent
+                    dark:border-gray-700
+                  ">Pricing</a>
+            </li>
+            <li>
+              <a href="#" class="
+                    block
+                    py-2
+                    pl-3
+                    pr-4
+                    text-gray-700
+                    hover:bg-gray-50
+                    md:hover:bg-transparent
+                    md:border-0
+                    md:hover:text-blue-700
+                    md:p-0
+                    dark:text-gray-400
+                    md:dark:hover:text-white
+                    dark:hover:bg-gray-700 dark:hover:text-white
+                    md:dark:hover:bg-transparent
+                  ">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <img class="rounded-b-lg" src="/images/fondo1.jpg" alt="" />
+  </header>
+
+  <section class="container mx-auto px-4 m-4">
+    <h1 class="animate__animated animate__zoomInDown text-center  font-medium
+          ...
+          py-8
+          text-teal-500/40
+          antialiased
+          text-6xl
+        ">
+      DekoHogar Diseño interior para ti
+    </h1>
+
+    <h3 class="
+          text-center
+          font-medium
+          ...
+          py-8
+          text-teal-500/70
+          antialiased
+          text-3xl
+        ">
+      Colecciones
+    </h3>
+    <div class="grid gap-4 grid-cols-3 auto-cols-max">
+      <div class=" bg-gray-100 rounded-xl ">
+        <div class="grid grid-cols-2 justify-center">
+          <div>
+            <p>
+              <img class="h-80 p-2 rounded-xl" alt="Cambiar imagen" height="100"
+                onmouseout="this.src='/images/1off.jpg';" onmouseover="this.src='/images/1on.jpg';"
+                src="/images/1off.jpg" />
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-2xl text-teal-500 hover:text-teal-600 font-normal">
+              Armario Zeus
+            </h3>
+            <p class="py-4">
+              Armario decorativo con varios compartimentos ideal para la sala
+              o habitación.
+            </p>
+
+            <table class="border-collapse shadowshadow border-gray-400 ...">
+              <tbody>
+                <tr>
+                  <td class="bg-teal-500 border border-gray-300 ...">
+                    Dimensiones
+                  </td>
+                  <td class="border border-gray-300 ...">73cm x 30cm</td>
+                </tr>
+                <tr>
+                  <td class="bg-teal-500 border border-gray-300 ...">
+                    Altura
+                  </td>
+                  <td class="border border-gray-300 ...">108 cm</td>
+                </tr>
+                <tr>
+                  <td class="bg-teal-500 border border-gray-300 ...">
+                    Material
+                  </td>
+                  <td class="border border-gray-300 ...">Madera pino</td>
+                </tr>
+
+                <tr>
+                  <td class="bg-teal-500 border border-gray-300 ...">Peso</td>
+                  <td class="border border-gray-300 ...">16,75 km</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-100 rounded-xl shadowshadow">
+        <div class="grid grid-cols-2 justify-center">
+          <div>
+            <p>
+              <img class="h-80 p-2 rounded-xl" alt="Cambiar imagen" height="100"
+                onmouseout="this.src='/images/2marron.jpg';" onmouseover="this.src='/images/2marronclaro.jpg';"
+                src="/images/2marron.jpg" />
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-2xl text-teal-500 hover:text-teal-600 font-normal">
+              Armario Zeus
+            </h3>
+            <p class="py-4">
+              Armario decorativo con varios compartimentos ideal para la sala
+              o habitación.
+            </p>
+
+            <table class="border-collapse border border-gray-400 ...">
+              <tbody>
+                <tr>
+                  <td class="bg-teal-500 border border-gray-300 ...">
+                    Dimensiones
+                  </td>
+                  <td class="border border-gray-300 ...">73cm x 30cm</td>
+                </tr>
+                <tr>
+                  <td class="bg-teal-500 border border-gray-300 ...">
+                    Altura
+                  </td>
+                  <td class="border border-gray-300 ...">108 cm</td>
+                </tr>
+                <tr>
+                  <td class="bg-teal-500 border border-gray-300 ...">
+                    Material
+                  </td>
+                  <td class="border border-gray-300 ...">Madera pino</td>
+                </tr>
+
+                <tr>
+                  <td class="bg-teal-500 border border-gray-300 ...">Peso</td>
+                  <td class="border border-gray-300 ...">16,75 km</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class=" bg-gray-100 rounded-xl shadowshadow-md">
+        <div class="grid grid-cols-2 justify-center">
+          <div>
+            <p>
+              <img class="h-80 p-2 rounded-xl" alt="Cambiar imagen" height="100"
+                onmouseout="this.src='/images/simpleoff.jpg';" onmouseover="this.src='/images/simpleon.jpg';"
+                src="/images/simpleoff.jpg" />
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-2xl text-teal-500 hover:text-teal-600 font-normal">
+              Armario Zeus
+            </h3>
+            <p class="py-4">
+              Armario decorativo con varios compartimentos ideal para la sala
+              o habitación.
+            </p>
+
+            <table class="border-collapse border border-gray-400 ...">
+              <tbody>
+                <tr>
+                  <td class="bg-teal-500 border border-gray-300 ...">
+                    Dimensiones
+                  </td>
+                  <td class="border border-gray-300 ...">73cm x 30cm</td>
+                </tr>
+                <tr>
+                  <td class="bg-teal-500 border border-gray-300 ...">
+                    Altura
+                  </td>
+                  <td class="border border-gray-300 ...">108 cm</td>
+                </tr>
+                <tr>
+                  <td class="bg-teal-500 border border-gray-300 ...">
+                    Material
+                  </td>
+                  <td class="border border-gray-300 ...">Madera pino</td>
+                </tr>
+
+                <tr>
+                  <td class="bg-teal-500 border border-gray-300 ...">Peso</td>
+                  <td class="border border-gray-300 ...">16,75 km</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container mx-auto px-12 m-8 grid grid-cols-2 gap-12 justify-center">
+
+
+    <div>
+      <p><img class="h-auto p-1 rounded-xl shadow-sm" alt="Cambiar imagen" onmouseout="this.src='/images/italianoff.jpg';"
+          onmouseover="this.src='/images/italianon.jpg';" src="/images/italianoff.jpg" /></p>
+    </div>
+    <div>
+      <h3 class="tituloParrafo pt-16 text-teal-500 hover:text-teal-600 font-normal">
+        Armario Zeus
+      </h3>
+      <p class="py-4 fParrafo">
+        Si buscas sillones de exterior que sean elegantes y se adapten a tu jardín, te sugiero la serie Crinoline
+        distribuida por B&B Italia y diseñada por Patricia Urquiola .
+
+        Esta colección se caracteriza por un trabajo de investigación y estilística que se ha realizado en una textura
+        tridimensional. Me gusta particularmente el efecto que crean las líneas, con alambres de dos tonos que
+        caracterizan algunas versiones de estas sillas.
+      </p>
+
+
+      <div class="grid grid-cols-2 ">
+        <div>
+          <span class="iconify iconBlock text-gray-400" data-icon="fluent:slide-size-24-regular" data-width="35"></span>
+          <p class="iconBlock">67 cm x 80 cm</p>
+        </div>
+
+        <div>
+          <span class="iconify iconBlock text-gray-400" data-icon="fluent:slide-size-24-regular" data-width="35"></span>
+          <p class="iconBlock">Polietileno y abacá</p>
+        </div>
+
+        <div>
+          <span class="iconify iconBlock text-gray-400" data-icon="fluent:slide-size-24-regular" data-width="35"></span>
+          <p class="iconBlock">67 cm x 80 cm</p>
+        </div>
+
+        <div>
+          <span class="iconify iconBlock text-gray-400" data-icon="fluent:slide-size-24-regular" data-width="35"></span>
+          <p class="iconBlock">Polietileno y abacá</p>
+        </div>
+
+
+      </div>
+
+      <br>
+      <p class="fParrafo ">Fabricadas en polietileno y abacá, están disponibles en diferentes formas y tamaños, como la
+        versión más grande, caracterizada por su comodidad y abrazo acogedor, un modelo especial con una gran decoración
+        floral. ¿No es bonito?</p>
+
+    </div>
+
+  </section>
+
+  <article>
+    <div class="container mx-auto px-12 m-8 grid grid-cols-2 h-96 bg-gradient-to-r from-gray-200 to-blue-oranje rounded ">
+<div>
+<h3 class=" mt-16 textSale text-teal-500">
+  SALE! <span class="text-red-500">50%</span>
+</h3>
+<h4 class="tituloParrafo text-6xl text-gray-500 opacity-50">Muebles Modernos</h4>
+<h5 class="fParrafo p-2 text-justify">En DekoHogar están los muebles de diseño que querés. Años de trayectoria  avalan <br> la calidad de nuestros muebles a medida. ¡Consultá por entregas inmediatas!</h5>
+
+</div>
+<div><img class="pt-12 animate__animated animate__bounceInRight" src="/images/sofa.png" alt=""></div>
+    </div>
+  </article>
+
+
+
+  <article>
+
+<div class="container mx-auto px-12 m-8 grid grid-cols-3">
+
+  <div class="wrapper antialiased text-gray-900">
+    <div>
+        
+        <img src="https://source.unsplash.com/random/350x350" alt=" random imgee" class="w-full object-cover object-center rounded-lg shadow-md">    
+        
+     <div class="relative px-4 -mt-16  ">
+       <div class="bg-white p-6 rounded-lg shadow-lg">
+        <div class="flex items-baseline">
+          <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
+            New
+          </span>
+          <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
+        2 baths  &bull; 3 rooms
+      </div>  
+        </div>
+        
+        <h4 class="mt-1 text-xl font-semibold uppercase leading-tight truncate">A random Title</h4>
+     
+      <div class="mt-1">
+        $1800
+        <span class="text-gray-600 text-sm">   /wk</span>
+      </div>
+      <div class="mt-4">
+        <span class="text-teal-600 text-md font-semibold">4/5 ratings </span>
+        <span class="text-sm text-gray-600">(based on 234 ratings)</span>
+      </div>  
+      </div>
+     </div>
+      
+    </div>
+      </div>
+
+      
+    <div class="wrapper  antialiased text-gray-900">
+      <div>
+          
+          <img src="/images/estanteon.jpg" alt=" random imgee" class="w-full object-cover object-center rounded-lg shadow-md">    
+          
+       <div class="relative px-4 -mt-16  ">
+         <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="flex items-baseline">
+            <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
+              New
+            </span>
+            <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
+          2 baths  &bull; 3 rooms
+        </div>  
+          </div>
+          
+          <h4 class="mt-1 text-xl font-semibold uppercase leading-tight truncate">A random Title</h4>
+       
+        <div class="mt-1">
+          $1800
+          <span class="text-gray-600 text-sm">   /wk</span>
+        </div>
+        <div class="mt-4">
+          <span class="text-teal-600 text-md font-semibold">4/5 ratings </span>
+          <span class="text-sm text-gray-600">(based on 234 ratings)</span>
+        </div>  
+        </div>
+       </div>
+        
+      </div>
+        </div>
+
+
+        <div class="container wrapper antialiased text-gray-900">
+          <div>
+              
+              <img src="https://source.unsplash.com/random/350x350" alt=" random imgee" class="w-full object-cover object-center rounded-lg shadow-md">    
+              
+           <div class="relative px-4 -mt-16  ">
+             <div class="bg-white p-6 rounded-lg shadow-lg">
+              <div class="flex items-baseline">
+                <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
+                  New
+                </span>
+                <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
+              2 baths  &bull; 3 rooms
+            </div>  
+              </div>
+              
+              <h4 class="mt-1 text-xl font-semibold uppercase leading-tight truncate">A random Title</h4>
+           
+            <div class="mt-1">
+              $1800
+              <span class="text-gray-600 text-sm">   /wk</span>
+            </div>
+            <div class="mt-4">
+              <span class="text-teal-600 text-md font-semibold">4/5 ratings </span>
+              <span class="text-sm text-gray-600">(based on 234 ratings)</span>
+            </div>  
+            </div>
+           </div>
+            
+          </div>
+            </div>
+
+</div>
+
+  </article>
+
+
+  <!-- ////////////////////FOOTER////////////////////////// -->
+
+  <footer class="border-t border-gray-200">
+    <div class="container flex flex-wrap items-center justify-center px-4 py-8 mx-auto  lg:justify-between">
+      <div class="flex flex-wrap justify-center">
+        <ul class="flex items-center space-x-4">
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Terms</li>
+        </ul>
+      </div>
+      <div class="flex justify-center mt-4 lg:mt-0">
+        <a>
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-6 h-6 text-blue-600" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-6 h-6 text-blue-300" viewBox="0 0 24 24">
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+            </path>
+          </svg>
+        </a>
+        <a class="ml-3">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-6 h-6 text-pink-400" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
+            class="w-6 h-6 text-blue-500" viewBox="0 0 24 24">
+            <path stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="ejercicio1.js"></script>
+  <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+</body>
+
+</html>
