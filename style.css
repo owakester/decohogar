@@ -27,3 +27,22 @@ font-weight: 700;
    
     place-items:center
   }
+
+
+  /* limitar texto en pantalla pequeña */
+
+
+
+  @media only screen 
+   and (max-width : 400px) {
+
+     .limit{
+       color: aqua;
+        height: 15%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: none
+     }
+  
+  
+}
