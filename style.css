@@ -44,5 +44,38 @@ font-weight: 700;
         display: none
      }
   
+     .textSale
+{
+font-size: 46px;
+font-weight: 700;
+}
   
 }
+
+
+
+.ventana{
+  background-color:rgb(245, 245, 245);
+  width:600px;
+  padding: 10px 20px;
+  margin: 20% auto;
+  position: relative;
+}
+.modal{
+  background-color: rgba(0,0,0,.8);
+  position:fixed;
+  top:-250px;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+  transition: all 1s;
+}
+#IrVentanaFlotante:target{
+  opacity:1;
+  pointer-events:auto;
+}
+.opcion{/*width: 100px;
+        background-color:yellow;
+border:1px solid black;*/}
