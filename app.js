@@ -48,15 +48,45 @@ function leerDatosCurso(curso) {
 //muestra el carrito de compras en el html
 
 function carritoHTML() {
+
+
+//lipiar html para que no se dupliquen los productos
+limpiarHTML();
+
+//recorre el carrito y genera el html
+
+
+
   articulosCarrito.forEach(curso => {
+    console.log(curso);
     const row = document.createElement("tr");
     row.innerHTML = `
-        <td>
-            ${curso.Titulo}
+        
+    <td>
+    <img class="rounded shadow my-2  " src="${curso.imagen}">
+    </td>
+
+    <td>
+     ${curso.Titulo} 
         </td>
+
+        <td>
+        ${curso.Precio} 
+           </td>
+
+           <td>
+           ${curso.cantidad} 
+              </td>
     `;
 
     //Agrega html de carrito e tbody
     contenedorCarrito.appendChild(row);
   });
+}
+
+
+//elimina cursos de table body
+
+function limpiarHTML(){
+  contenedorCarrito.innerHTML=""
 }

@@ -34,7 +34,7 @@ font-weight: 700;
 
 
   @media only screen 
-   and (max-width : 450px) {
+   and (max-width : 400px) {
 
      .limit{
        color: aqua;
