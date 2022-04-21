@@ -11,11 +11,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
 
-
-  ">
   <title>Proyecto Decohogar</title>
 </head>
 
@@ -23,19 +26,9 @@
   <header class="container mx-auto px-4">
     <nav class="bg-orange-500/30 border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
       <div class="container flex flex-wrap items-center justify-between mx-auto">
-        <a href="#" class="flex"><svg class="h-10 mr-3" viewBox="0 0 52 72" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M1.87695 53H28.7791C41.5357 53 51.877 42.7025 51.877 30H24.9748C12.2182 30 1.87695 40.2975 1.87695 53Z"
-              fill="#76A9FA"></path>
-            <path
-              d="M0.000409561 32.1646L0.000409561 66.4111C12.8618 66.4111 23.2881 55.9849 23.2881 43.1235L23.2881 8.87689C10.9966 8.98066 1.39567 19.5573 0.000409561 32.1646Z"
-              fill="#A4CAFE"></path>
-            <path
-              d="M50.877 5H23.9748C11.2182 5 0.876953 15.2975 0.876953 28H27.7791C40.5357 28 50.877 17.7025 50.877 5Z"
-              fill="#1C64F2"></path>
-          </svg>
-          <span class="self-center text-lg font-semibold whitespace-nowrap dark:text-white">DecoHogar</span>
+        <a href="#" class="flex">
+          <img class="h-16" src="images/logo.png" alt="">
+          <!--  <span class="self-center text-lg font-semibold whitespace-nowrap dark:text-white">DecoHogar</span> -->
         </a>
         <button data-collapse-toggle="mobile-menu" type="button"
           class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -59,32 +52,18 @@
                 class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
                 aria-current="page">Home</a>
             </li>
-            <li>
-              <a href="#"
-                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
-            </li>
-            <li>
-              <a href="#"
-                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
-            </li>
-            <li>
-              <a href="#"
-                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
-            </li>
-            <li>
-              <a href="#"
-                class="block py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-            </li>
           </ul>
         </div>
       </div>
     </nav>
     <img class="rounded-b-lg" src="images/fondo1.jpg" alt="" />
   </header>
+
+
   <section class="container mx-auto px-4 m-4">
     <h1
       class="animate__animated animate__zoomInDown text-center font-medium ... py-8 text-teal-500/40 antialiased text-6xl">
-      DekoHogar Diseño interior para ti
+      DecoHogar Diseño interior para ti
     </h1>
     <h3 class="text-center font-medium ... py-8 text-teal-500/70 antialiased text-3xl">
       Colecciones
@@ -300,158 +279,63 @@
       </div>
     </div>
   </article>
-  <article>
-    <h3 class="text-center font-medium ... py-8 text-teal-500/70 antialiased text-3xl">
-      Colecciones
-    </h3>
-    <div id="lista-cursos" class="container mx-auto px-12 grid grid-cols-1 sm:grid-cols-3">
-      <!-- //art1// -->
-      <!-- This is an example component -->
-
-      <div class="max-w-2xl mx-auto">
-        <div class="bg-white shadow-md rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
-
-          <div class=" pb-5">
-            <a href="#">
-              <img class="h-auto p-1 shadow-sm" alt="Cambiar imagen" onmouseout="this.src='images/lamp2off.jpg';"
-                onmouseover="this.src='images/lamp2on.jpg';" src="images/lamp2off.jpg"
-                class="w-full object-cover object-center rounded-lg shadow-md" />
-            </a>
-
-            <a href="#">
-              <h3 class="pl-3 text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Luz de techo vintage
-              </h3>
-            </a>
-            <div class="flex items-center mt-2.5 mb-5">
-              <!-- estrellas -->
-              <i class="pl-3 text-yellow-300 fas fa-star"></i>
-              <i class="pl-3 text-yellow-300 fas fa-star"></i>
-              <i class="pl-3 text-yellow-300 fas fa-star"></i>
-              <i class="pl-3 text-yellow-300 fas fa-star"></i>
-              <span
-                class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
-            </div>
-            <div class=" precio flex items-center justify-between">
-              <span class="pl-3 text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-              <a href="#"
-                class="button agregar-carrito bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mr-3 rounded"
-                data-id="1">
-                Comprar</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="max-w-2xl mx-auto">
-        <div class="bg-white shadow-md rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
-
-          <div class=" pb-5">
-            <a href="#">
-              <img class="h-auto p-1 shadow-sm" alt="Cambiar imagen" onmouseout="this.src='images/l3off.jpg';"
-                onmouseover="this.src='images/l3on.jpg';" src="images/l3off.jpg"
-                class="w-full object-cover object-center rounded-lg shadow-md" />
-            </a>
-
-            <a href="#">
-              <h3 class="pl-3 text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Luz de techo Cosmo
-              </h3>
-            </a>
-            <div class="flex items-center mt-2.5 mb-5">
-              <!-- estrellas -->
-              <i class="pl-3 text-yellow-300 fas fa-star"></i>
-              <i class="pl-3 text-yellow-300 fas fa-star"></i>
-              <i class="pl-3 text-yellow-300 fas fa-star"></i>
-              <i class="pl-3 text-yellow-300 fas fa-star"></i>
-              <span
-                class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
-            </div>
-            <div class=" precio flex items-center justify-between">
-              <span class="pl-3 text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-              <a href="#"
-                class="button agregar-carrito bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mr-3 rounded"
-                data-id="2">
-                Comprar</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="max-w-2xl mx-auto">
-        <div class="bg-white shadow-md rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
-
-          <div class=" pb-5">
-            <a href="#">
-              <img class="h-auto p-1 shadow-sm" alt="Cambiar imagen" onmouseout="this.src='images/lampoff.jpg';"
-                onmouseover="this.src='images/lampon.jpg';" src="images/lampoff.jpg"
-                class="w-full object-cover object-center rounded-lg shadow-md" />
-            </a>
-
-            <a href="#">
-              <h3 class="pl-3 text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Lampara de mesa
-                Tailmin</h3>
-            </a>
-            <div class="flex items-center mt-2.5 mb-5">
-              <!-- estrellas -->
-              <i class="pl-3 text-yellow-300 fas fa-star"></i>
-              <i class="pl-3 text-yellow-300 fas fa-star"></i>
-              <i class="pl-3 text-yellow-300 fas fa-star"></i>
-              <i class="pl-3 text-yellow-300 fas fa-star"></i>
-              <span
-                class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">4.0</span>
-            </div>
-            <div class=" precio flex items-center justify-between">
-              <span class="pl-3 text-3xl font-bold text-gray-900 dark:text-white">$600</span>
-              <a href="#"
-                class="button agregar-carrito bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mr-3 rounded"
-                data-id="3">
-                Comprar</a>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
 
 
 
-    </div>
-  </article>
-  <div class="opcion">
-    <a href="#IrVentanaFlotante">
-      <img src="https://image.flaticon.com/icons/png/512/16/16417.png" width="50" title="desplegar ventana flotante" />
-    </a>
-  </div>
-  <div id="IrVentanaFlotante" class="modal ">
-    <div class="bg-gray-200 carrito ventana border rounded shadow-md">
-      <a href="#" style="text-decoration: none"> X </a>
-      <table id="lista-carrito">
-        <thead class="bg-gray-300 rounded ">
-          <th>Imagen</th>
-          <th>Nombre</th>
-          <th>Precio</th>
-          <th>Cantidad</th>
-        </thead>
-        <tbody></tbody>
-      </table>
-      <a href="#" id="vaciar-carrito" class="button">Vaciar carrito</a>
+  <div class="container">
+    <div class="row">
+      <!-- Elementos generados a partir del JSON -->
+      <img id="imgOn" src="" alt="">
+      <main id="items" class="col-sm-9 row"></main>
+      <!-- Carrito -->
+
+      <aside class=" col-sm-3">
+        <h2 class="text-center font-medium ... py-8 text-teal-500/70 antialiased text-2xl">Carrito</h2>
+        <!-- Elementos del carrito -->
+        <ul id="carrito" class="list-group text-center font-medium ... py-8 text-teal-800/70 antialiased text-3sm">
+        </ul>
+
+        <hr>
+        <!-- Precio total -->
+        <p class="text-right text-center font-medium ... py-2 text-teal-500/70 antialiased text-xl">Total: <span
+            id="total"></span>$</p>
+        <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+        <a href="compra.html" class="btn btn-success">Comprar</a>
+
+
+        <p class="alert alert-warning w-48 m-4" id="p1">Favor seleccione un producto pulsando +</p>
+
+      </aside>
     </div>
   </div>
 
+  <div class=" container mt-3 align-items-center">
+
+    <button type="button" class="btn btn-warning center-block" id="btproducto">Mas productos</button>
+    <p> Pulse el boton para estar al dia con las Promociones pagando en efectivo en tienda fisica</p>
+    <div id="colecciones" class="mx-auto px-12 m-8 bg-gradient-to-r from-gray-200 to-blue-oranje rounded" role="alert">
+      <h3 class="text-center font-medium ... py-8 text-teal-500/70 antialiased text-3xl">
+        Colecciones
+      </h3>
 
 
 
+      <div class=" container-fluid">
+
+        <div id="productos">
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
 
   <!-- ////////////////////FOOTER////////////////////////// -->
   <footer class="border-t border-gray-200">
     <div class="container flex flex-wrap items-center justify-center px-4 py-8 mx-auto lg:justify-between">
-      <div class="flex flex-wrap justify-center">
-        <ul class="flex items-center space-x-4">
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Terms</li>
-        </ul>
-      </div>
+
       <div class="flex justify-center mt-4 lg:mt-0">
         <a>
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -485,9 +369,12 @@
       </div>
     </div>
   </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
   <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+
+
 </body>
 
 </html>

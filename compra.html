@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+</head>
+
+
+<body>
+
+  <header>
+
+    <a href="#" class="flex ">
+      <img class="h-16 mx-auto d-block " src="images/logo.png" alt="">
+      <!--  <span class="self-center text-lg font-semibold whitespace-nowrap dark:text-white">DecoHogar</span> -->
+    </a>
+  </header>
+  <div class="container">
+    <div class="grid grid-cols-3">
+      <!-- Elementos generados a partir del JSON -->
+      <img id="imgOn" src="" alt="">
+      <main id="items" style="display: none;" class="col-sm-9 row"></main>
+      <!-- Carrito -->
+
+
+
+      <aside class=" col-sm-3">
+        <div class="bg-gray-100 m-4 p-4 rounded-lg shadow-sm w-96">
+
+          <p class="text-teal-500/70 mt-2 py-2" id="current_date"></p>
+
+          <p class="text-teal-800/70 mt-2 py-2"> Felicitaciones por su compra, Su pedido sera despacho a la direccion
+            registrada en su cueta</p>
+
+          <h2 class="text-center font-medium ... py-4 text-teal-500/70 antialiased text-2xl">Registro de compra</h2>
+          <!-- Elementos del carrito -->
+          <ul id="carrito" class="list-group text-center pb-6 ... py-8 text-teal-800/70 antialiased text-3sm">
+          </ul>
+
+          <hr>
+          <!-- Precio total -->
+          <p class="text-right text-center font-medium ... py-2 text-teal-500/70 antialiased text-xl">Total: <span
+              id="total"></span>$</p>
+
+
+
+
+          <button>
+            <a href="index.html" class="text-teal-800/70  btn btn-success">
+              <ion-icon size="large" name="return-up-back-outline"></ion-icon>
+            </a>
+          </button>
+
+
+          <button>
+            <a href="index.html" class="text-teal-800/70  btn btn-success">
+              <ion-icon class="printbutton" size="large" name="print-outline">Imprimir</ion-icon>
+            </a>
+          </button>
+
+          <button style="display: none;" id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+
+
+        </div>
+
+      </aside>
+    </div>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
